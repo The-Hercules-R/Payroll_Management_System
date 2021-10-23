@@ -1,1 +1,1 @@
-<h1>Payroll Management System</h1>
+<h1 align="center">Payroll Management System</h1>
