@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Add Class</title>
     <link rel="stylesheet" href="../styles/addClass.css">
+    <script src="../scripts/addClass.js"></script>
+     
+    
 </head>
 <body>
 <div class="big_content">
@@ -15,7 +18,7 @@
             <table cellpadding="8px" class="table">
                 <tr>
                     <td>Class Name</td>
-                    <td><input id="class_name" class="input" type="text"></td>
+                    <td><input id="class" class="input" type="text"></td>
                 </tr>
                 <tr>
                     <td>Basic Pay</td>
@@ -26,7 +29,7 @@
                     <td><input id="salary" class="input" type="text"></td>
                 </tr>
                 <tr>
-                    <td>Travel aAllowance</td>
+                    <td>Travel Allowance</td>
                     <td><input id="t_all" class="input" type="text"></td>
                 </tr>
                 <tr>
@@ -41,7 +44,7 @@
                     <td></td>
                     <td>
                         <button type="reset " class="bt reset" id="">Reset</button>
-                        <button type="button" onclick="add()" class="bt add" id="">Add</button>
+                        <button type="button" class="bt add" id="bt_add" onclick="addRow()">Add</button>
                     </td>
                 </tr>
             </table>
@@ -51,54 +54,19 @@
    
 </div>
 <div class="teble_content">
-    <table cellpadding="30px" width="100%"  class="teble_of_class">
-        <tr >
-            <th>Class</th>
-            <th>Basic Pay</th>
-            <th>Salary</th>
-            <th>T_All</th>
-            <th>M_All</th>
-            <th>W_All</th>
-        </tr>
+    <table class="add_table" border="0" cellpadding = "10px" = "10px">
         <tr>
-            <td id="add_class"></td>
-            <td id="add_basic"></td>
-            <td id="add_salary"></td>
-            <td id="add_t"></td>
-            <td id="add_m"></td>
-            <td id="add_w"></td>
-
+                <th>Class</th>
+                <th>Basic Pay</th>
+                <th>Salary</th>
+                <th>Travel Allowance</th>
+                <th>Medical Allowance</th>
+                <th>Washing Allowance</th>
+            
         </tr>
+      
     </table>
-
 </div>
 </body>
 </html>
-<script type="text/javascript">
-    function add(){
-        const a = document.getElementById('class_name').value
-        const b = document.getElementById('basic').value
-        const c = document.getElementById('salary').value
-        const d = document.getElementById('t_all').value
-        const e = document.getElementById('m_all').value
-        const f = document.getElementById('w_all').value
 
-        document.getElementById('add_class').innerHTML = a
-        document.getElementById('add_basic').innerHTML = b
-        document.getElementById('add_salary').innerHTML = c
-        document.getElementById('add_t').innerHTML = d
-        document.getElementById('add_m').innerHTML = e
-        document.getElementById('add_w').innerHTML = f
-
-    }
-    function reset(){
-        document.getElementById('class_name').value =''
-        document.getElementById('basic').value = ''
-        document.getElementById('salary').value = ''
-        document.getElementById('t_all').value = ''
-        document.getElementById('m_all').value = ''
-        document.getElementById('w_all').value  = ''
-    }
-
-
-</script>
