@@ -29,27 +29,32 @@ a {
   width: 100%;
   background-color: #f0f8ff;
   display: flex;
-}
-.col-sm {
-  border-radius: 15px;
-  height: max-content;
-  margin: 10px;
-  background-color: white;
+  flex-direction: column;
   padding: 10px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-#emp_dis {
-  width: 200px;
-  height: 200px;
-  background-color: white;
-}
-.row {
-  margin-left: 10px;
-  margin-right: 10px;
-}
-#test {
+.col-con {
   display: flex;
   flex-direction: column;
+}
+.row-con {
+  display: flex;
+  flex-direction: row;
+}
+.rounded-con {
+  background-color: white;
+  width: max-content;
+  height: max-content;
+  border-radius: 15px;
+  margin: 10px;
+  padding: 15px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.con-100 {
+  flex: 1;
+}
+th,
+td {
+  /* text-align: center; */
 }
 /*btn_signout style*/
 #btn_signout {

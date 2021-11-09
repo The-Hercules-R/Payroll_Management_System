@@ -35,10 +35,6 @@ const drawChart = () => {
     height: 500,
     hAxis: {
       format: '',
-      gridLines: {
-        color: '#B1E5F2',
-        minSpacing: 20,
-      },
     },
     legend: {
       textStyle: {
@@ -46,11 +42,6 @@ const drawChart = () => {
         fontSize: 16,
       },
     },
-    // backgroundColor: {
-    //   stroke: 'cyan',
-    //   width: 2,
-    // },
-    // color: ['#F5F749', '#B1E5F2', '#F0003C'],
   };
 
   const chart = new google.charts.Line(document.getElementById('chart'));
