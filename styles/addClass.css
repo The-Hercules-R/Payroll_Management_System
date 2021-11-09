@@ -1,0 +1,63 @@
+.big_content{
+    width: auto;
+    height: auto;
+    /*background: rgb(197, 111, 111);*/
+    position: relative;
+}
+.add_class{
+    margin: auto;
+    margin-top: 50px;
+    /*background: rgb(92, 61, 61);*/
+    width: 500px;
+    height: 280px;
+}
+.form{
+    font-size: 15px;
+    color: black;
+    
+    font-family: Arial, Helvetica, sans-serif;
+}
+.input{
+    width: 100%;
+    border-radius: 2px;
+    border-style: solid;
+}
+.table_input{
+    margin: auto;
+    position: relative;
+    
+
+}
+.bt{
+    width: 80px;
+    height: 23px;
+    
+   text-align: center;
+    border-radius: 2px;
+    border-style: solid;
+    color: white;
+    border: none;
+    
+}
+.reset{
+
+    background-color: red;
+    
+}
+.add{
+    background-color: blue;
+    position: absolute;
+    right: 9px;
+    
+    
+}
+
+
+.teble_content{
+    margin: auto;
+    width: 1000px;
+    height: 900px;
+    /*background: rgb(34, 20, 20);*/
+    font-family: Arial, Helvetica, sans-serif;
+}
+
