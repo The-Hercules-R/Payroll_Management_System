@@ -1,6 +1,6 @@
 $('document').ready(() => {
-  $('#btn_logout').click(() => {
-    console.log('Hello');
+  $('#btn_signout').click(() => {
+    location.replace('../pages/login.html');
   });
   google.charts.load('current', { 'packages': ['line'] });
   google.charts.setOnLoadCallback(drawChart);
