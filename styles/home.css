@@ -52,9 +52,15 @@ a {
 .con-100 {
   flex: 1;
 }
-th,
-td {
-  /* text-align: center; */
+#profit {
+  color: #383c9f;
+  font-size: 24px;
+  font-weight: bold;
+}
+#expense {
+  color: rgb(240, 0, 60);
+  font-size: 24px;
+  font-weight: bold;
 }
 /*btn_signout style*/
 #btn_signout {
