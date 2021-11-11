@@ -1,0 +1,25 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.table_input{
+    width: 600px;
+    height: 400px;
+    margin: auto;
+    border-style: none;
+    
+    
+    
+}
+.btn{
+    width: 100px;
+    height: 35px;
+}
+.teble_content{
+    margin: auto;
+    width: 1500px;
+    height: 900px;
+    /* background: red; */
+    
+}
+

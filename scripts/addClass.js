@@ -5,7 +5,7 @@
         var _m_all = document.getElementById('m_all').value;
         var _w_all = document.getElementById('w_all').value;
 
-        var table = document.getElementsByClassName('table')[0];
+        var table = document.getElementsByClassName('add_table')[0];
 
         var newRow = table.insertRow(1);
 
@@ -32,4 +32,5 @@
         document.getElementById('t_all').innerHTML = '';
         document.getElementById('m_all').innerHTML = '';
         document.getElementById('w_all').innerHTML  = '';
+
     }

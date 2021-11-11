@@ -13,7 +13,7 @@
     height: 280px;
 }
 .form{
-    font-size: 15px;
+    
     color: black;
     
     font-family: Arial, Helvetica, sans-serif;
@@ -30,8 +30,8 @@
 
 }
 .bt{
-    width: 80px;
-    height: 23px;
+    width: 100px;
+    height: 35px;
     
    text-align: center;
     border-radius: 2px;
@@ -40,11 +40,8 @@
     border: none;
     
 }
-.reset{
 
-    background-color: red;
-    
-}
+
 .add{
     background-color: blue;
     position: absolute;
@@ -52,13 +49,11 @@
     
     
 }
-
-
 .teble_content{
     margin: auto;
     width: 1000px;
     height: 900px;
     /*background: rgb(34, 20, 20);*/
-    font-family: Arial, Helvetica, sans-serif;
+    
 }
 
