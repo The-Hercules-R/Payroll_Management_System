@@ -1,165 +1,179 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Salary Report</title>
-    <link rel="stylesheet" href="../styles/salaryReport.css">
+    <link rel="stylesheet" href="../styles/salaryReport.css" />
     <script src="../scripts/salaryReport.js"></script>
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
     <script src="../scripts/home.js"></script>
-    <link rel="stylesheet" href="../styles/home.css">
-     
-    
-</head>
-<body>
+    <script src="../scripts/salaryReport.js"></script>
+    <link rel="stylesheet" href="../styles/home.css" />
+  </head>
+  <body>
     <nav class="navbar sticky-top navbar-expand-sm">
-        <div class="container-fluid">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link text-white" href="../pages/home.html">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-white" href="../pages/addClass.html"
-                >Add Class</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-white" href="../pages/addEmploye.html"
-                >Add Employee</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-white" href="../pages/employeeReport.html"
-                >Employee Report</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-white" href="../pages/salary.html"
-                >Salary</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-white" href="../pages/salaryReport.html"
-                >Salary Report</a
-              >
-            </li>
-          </ul>
-        </div>
-        <button id="btn_signout" class="button-82-pushable">
-          <span class="button-82-shadow"></span>
-          <span class="button-82-edge"></span>
-          <span class="button-82-front text"> Sign Out </span>
-        </button>
-      </nav>
-      <div style="margin: auto; width: 300px; height: 60px;" class="mt-5">
-
-        <input id="myInput" class="form-control" type="text" placeholder="Search Employee...">
-      
+      <div class="container-fluid">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link text-white" href="../pages/home.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="../pages/addClass.html"
+              >Add Class</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="../pages/addEmploye.html"
+              >Add Employee</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="../pages/employeeReport.html"
+              >Employee Report</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="../pages/salary.html"
+              >Salary</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="../pages/salaryReport.html"
+              >Salary Report</a
+            >
+          </li>
+        </ul>
+      </div>
+      <button id="btn_signout" class="button-82-pushable">
+        <span class="button-82-shadow"></span>
+        <span class="button-82-edge"></span>
+        <span class="button-82-front text"> Sign Out </span>
+      </button>
+    </nav>
+    <div style="margin: auto; width: 300px; height: 60px" class="mt-5">
+      <input
+        id="myInput"
+        class="form-control"
+        type="text"
+        placeholder="Search Employee..."
+      />
     </div>
-    <div class=" mt-lg-5">
+    <div class="mt-lg-5">
       <table add_table class="table table-primary table-striped add_table">
         <thead>
-        <tr>
-          <th>Name</th>
-          <th>Address</th>
-          <th>City</th>
-          <th>PinCode</th>
-          <th>Basic Salary</th>
-          <th>Bank Account</th>
-          <th>Degree</th>
-          <th>Branch</th>
-          <th>Mobile</th>
-          <th>E-mail</th>
-        </tr>
-      </thead>
-      <tbody id="myTable">
-        <tr>
-          <td>Sok Ly</td>
-          <td>Khan Russei Keo</td>
-          <td>Phnom Penh</td>
-          <td>12100</td>
-          <td>500$</td>
-          <td>005879418</td>
-          <td>PHD</td>
-          <td>IT</td>
-          <td>(+855)125892864</td>
-          <td>sokly168@yahoo.com
-            <a href="#"  target="blank">Salary Receipt</a>
-          </td>
-        </tr>
-        <tr>
-          <td>Sam Lyma</td>
-          <td>Phnom Penh Thmei</td>
-          <td>Phnom Penh</td>
-          <td>12101</td>
-          <td>350$</td>
-          <td>00654984</td>
-          <td>Masters degree</td>
-          <td>IT</td>
-          <td>(+855)12879654</td>
-          <td>lyma@gmail.com
-            <a href="#"  target="blank">Salary Receipt</a>
-          </td>
-        </tr>
-        <tr>
-          <td>Ly Kana</td>
-          <td>Phnom Penh Thmei</td>
-          <td>Phnom Penh</td>
-          <td>13854</td>
-          <td>600$</td>
-          <td>00654984</td>
-          <td>Masters degree</td>
-          <td>IT</td>
-          <td>(+855)125879643</td>
-          <td>lykana@gmail.com
-            <a href="#"  target="blank">Salary Receipt</a>
-          </td>
-        </tr>
-        <tr>
-          <td>Sok Kha</td>
-          <td>Phnom Penh Thmei</td>
-          <td>Phnom Penh</td>
-          <td>13854</td>
-          <td>600$</td>
-          <td>00654984</td>
-          <td>Masters degree</td>
-          <td>IT</td>
-          <td>(+855)125879643</td>
-          <td>lykana@gmail.com
-            <a href="#"  target="blank">Salary Receipt</a>
-          </td>
-        </tr>
-        <tr>
-          <td>Vi chea</td>
-          <td>Phnom Penh Thmei</td>
-          <td>Phnom Penh</td>
-          <td>13854</td>
-          <td>600$</td>
-          <td>00654984</td>
-          <td>Masters degree</td>
-          <td>IT</td>
-          <td>(+855)125879643</td>
-          <td>lykana@gmail.com
-            <a href="#"  target="blank">Salary Receipt</a>
-          </td>
-        </tr>
-      </tbody>
+          <tr>
+            <th>Name</th>
+            <th>Address</th>
+            <th>City</th>
+            <th>PinCode</th>
+            <th>Basic Salary</th>
+            <th>Bank Account</th>
+            <th>Degree</th>
+            <th>Branch</th>
+            <th>Mobile</th>
+            <th>E-mail</th>
+          </tr>
+        </thead>
+        <tbody id="myTable">
+          <tr>
+            <td>Sok Ly</td>
+            <td>Khan Russei Keo</td>
+            <td>Phnom Penh</td>
+            <td>12100</td>
+            <td>500$</td>
+            <td>005879418</td>
+            <td>PHD</td>
+            <td>IT</td>
+            <td>(+855)125892864</td>
+            <td>
+              sokly168@yahoo.com
+              <a href="#" target="blank">Salary Receipt</a>
+            </td>
+          </tr>
+          <tr>
+            <td>Sam Lyma</td>
+            <td>Phnom Penh Thmei</td>
+            <td>Phnom Penh</td>
+            <td>12101</td>
+            <td>350$</td>
+            <td>00654984</td>
+            <td>Masters degree</td>
+            <td>IT</td>
+            <td>(+855)12879654</td>
+            <td>
+              lyma@gmail.com
+              <a href="#" target="blank">Salary Receipt</a>
+            </td>
+          </tr>
+          <tr>
+            <td>Ly Kana</td>
+            <td>Phnom Penh Thmei</td>
+            <td>Phnom Penh</td>
+            <td>13854</td>
+            <td>600$</td>
+            <td>00654984</td>
+            <td>Masters degree</td>
+            <td>IT</td>
+            <td>(+855)125879643</td>
+            <td>
+              lykana@gmail.com
+              <a href="#" target="blank">Salary Receipt</a>
+            </td>
+          </tr>
+          <tr>
+            <td>Sok Kha</td>
+            <td>Phnom Penh Thmei</td>
+            <td>Phnom Penh</td>
+            <td>13854</td>
+            <td>600$</td>
+            <td>00654984</td>
+            <td>Masters degree</td>
+            <td>IT</td>
+            <td>(+855)125879643</td>
+            <td>
+              lykana@gmail.com
+              <a href="#" target="blank">Salary Receipt</a>
+            </td>
+          </tr>
+          <tr>
+            <td>Vi chea</td>
+            <td>Phnom Penh Thmei</td>
+            <td>Phnom Penh</td>
+            <td>13854</td>
+            <td>600$</td>
+            <td>00654984</td>
+            <td>Masters degree</td>
+            <td>IT</td>
+            <td>(+855)125879643</td>
+            <td>
+              lykana@gmail.com
+              <a href="#" target="blank">Salary Receipt</a>
+            </td>
+          </tr>
+        </tbody>
       </table>
     </div>
-
-    <script>
-      $(document).ready(function(){
-        $("#myInput").on("keyup", function() {
-          var value = $(this).val().toLowerCase();
-          $("#myTable tr").filter(function() {
-            $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
-          });
-        });
-      });
-      </script>
-</body>
+  </body>
+</html>
