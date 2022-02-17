@@ -26,14 +26,14 @@
       integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
       crossorigin="anonymous"
     ></script>
-    <script type="text/javascript" src="../scripts/login.js" defer></script>
+    <!-- <script type="text/javascript" src="../scripts/login.js" defer></script> -->
   </head>
   <body>
     <div
-      class="form-control-lg mt-lg-5"
-      style="width: 500px; height: 300px; margin: auto"
+      class="form-control-lg"
+      style="width: 500px; height: 300px; margin: auto; margin-top: 10%;"
     >
-      <form>
+      <form method="post" action="..\Controllor\loginController.php">
         <h1
           class="text-primary"
           style="text-align: center; margin-bottom: 30px"
@@ -45,18 +45,23 @@
           class="form-control form-control-lg"
           type="text"
           placeholder="Username"
+          name="username"
+          required
         /><br />
         <input
           id="_password"
           type="password"
           class="form-control form-control-lg"
           placeholder="Password"
+          name="password"
+          required
         />
 
         <button
-          type="button"
+          type="submit"
           class="btn-lg btn btn-block btn-primary mt-4"
           onclick="login()"
+          name="login"
         >
           Login
         </button>
