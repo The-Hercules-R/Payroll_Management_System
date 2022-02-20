@@ -28,7 +28,7 @@
       <div class="container-fluid">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link text-white" href="../pages/home.html">Home</a>
+            <a class="nav-link text-white" href="../pages/home.php">Home</a>
           </li>
           <li class="nav-item">
             <a class="nav-link text-white" href="../pages/addEmployee.php"
@@ -41,12 +41,7 @@
             >
           </li>
           <li class="nav-item">
-            <a class="nav-link text-white" href="../pages/salary.php"
-              >Salary</a
-            >
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-white" href="../pages/salaryReport.html"
+            <a class="nav-link text-white" href="../pages/generateSalary.php"
               >Salary Report</a
             >
           </li>

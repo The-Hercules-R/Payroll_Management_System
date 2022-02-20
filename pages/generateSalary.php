@@ -26,24 +26,8 @@
 </head>
 
 <body>
-    <!-- =============================================================== -->
-    <!-- Modal -->
-    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Employee Info :</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body-footer"></div>
-            </div>
-        </div>
-    </div>
-    <!-- =============================================================== -->
-    </div>
-    <nav class="navbar sticky-top navbar-expand-sm">
+    
+<nav class="navbar sticky-top navbar-expand-sm">
       <div class="container-fluid">
         <ul class="navbar-nav">
           <li class="nav-item">
@@ -111,9 +95,9 @@
                             <td><?php echo $row['Branch'] ?></td>
                             <td><?php echo $row['mobile'] ?></td>
                             <td><?php echo $row['e-mail'] ?>
-                                <a class="datamodal" data-id="<?php echo $row['id'] ?>">Details</a>
+                                <a target="blank" href="../pages/salaryReport.php?id=<?php echo $row['id'] ?>">Generate Salary</a>
                             </td>
-                            <a href=""></a>
+                            
                         </tr>
                 <?php
                     }
@@ -127,48 +111,48 @@
     <script>
         $(document).ready(function() {
             $('#myTable').DataTable();
-            $('#myTable').on('click', '.datamodal', function(e) {
-                e.preventDefault();
-                var mainUrl = window.location.origin;
-                var id = $(this).data('id');
-                $.ajax({
-                    method: "POST",
-                    url: "../Model/ajax.php",
-                    data: {
-                        id
-                    },
-                    dataType: "text",
-                    success: function(datas) {
-                        var json = JSON.parse(datas)[0];
-                        console.log(json);
-                        var html = `
+            // $('#myTable').on('click', '.datamodal', function(e) {
+            //     e.preventDefault();
+            //     var mainUrl = window.location.origin;
+            //     var id = $(this).data('id');
+            //     $.ajax({
+            //         method: "POST",
+            //         url: "../Model/ajax.php",
+            //         data: {
+            //             id
+            //         },
+            //         dataType: "text",
+            //         success: function(datas) {
+            //             var json = JSON.parse(datas)[0];
+            //             console.log(json);
+            //             var html = `
                         
-                            <div class="modal-body">
-                        <ul class="list-group">
-                            <li class="list-group-item">Employee ID : ${json['id']}</li>
-                            <li class="list-group-item">Name : ${json['name']}</li>
-                            <li class="list-group-item">Address : ${json['address']}</li>
-                            <li class="list-group-item">City : ${json['city']}</li>
-                            <li class="list-group-item">PinCode : ${json['pincode']}</li>
-                            <li class="list-group-item">Basic Salary : ${json['basicSalary']}</li>
-                            <li class="list-group-item">Bank Account :  ${json['bank']}</li>
-                            <li class="list-group-item">Degree :${json['degree']} </li>
-                            <li class="list-group-item">Branch : ${json['Branch']}</li>
-                            <li class="list-group-item">Mobile : ${json['mobile']}</li>
-                            <li class="list-group-item">E-mail : ${json['e-mail']}</li>
-                        </ul>
-                        </div>
-                        <div class="modal-footer">
-                            <a type="button" href="../Model/delete.php?id_del=${json['id']}" name="delete" class="btn btn-danger">Delete</button>
-                            <a type="button" target="blank" href="../pages/updateData.php?id_up=${json['id']}" name="update" class="btn btn-primary">Update</a>
-                        </div>`;
+            //                 <div class="modal-body">
+            //             <ul class="list-group">
+            //                 <li class="list-group-item">Employee ID : ${json['id']}</li>
+            //                 <li class="list-group-item">Name : ${json['name']}</li>
+            //                 <li class="list-group-item">Address : ${json['address']}</li>
+            //                 <li class="list-group-item">City : ${json['city']}</li>
+            //                 <li class="list-group-item">PinCode : ${json['pincode']}</li>
+            //                 <li class="list-group-item">Basic Salary : ${json['basicSalary']}</li>
+            //                 <li class="list-group-item">Bank Account :  ${json['bank']}</li>
+            //                 <li class="list-group-item">Degree :${json['degree']} </li>
+            //                 <li class="list-group-item">Branch : ${json['Branch']}</li>
+            //                 <li class="list-group-item">Mobile : ${json['mobile']}</li>
+            //                 <li class="list-group-item">E-mail : ${json['e-mail']}</li>
+            //             </ul>
+            //             </div>
+            //             <div class="modal-footer">
+            //                 <a type="button" href="../Model/delete.php?id_del=${json['id']}" name="delete" class="btn btn-danger">Delete</button>
+            //                 <a type="button" target="blank" href="../pages/updateData.php?id_up=${json['id']}" name="update" class="btn btn-primary">Update</a>
+            //             </div>`;
 
-                        $('.modal-body-footer').html(html);
+            //             $('.modal-body-footer').html(html);
 
-                        $('#exampleModal').modal('toggle');
-                    }
-                });
-            });
+            //             $('#exampleModal').modal('toggle');
+            //         }
+            //     });
+            // });
 
         });
     </script>

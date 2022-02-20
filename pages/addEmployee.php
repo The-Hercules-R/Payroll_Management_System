@@ -66,30 +66,24 @@
     <link rel="stylesheet" href="../styles/home.css" />
   </head>
   <body>
-    <nav class="navbar sticky-top navbar-expand-sm">
+  <nav class="navbar sticky-top navbar-expand-sm">
       <div class="container-fluid">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link text-white" href="../pages/home.html">Home</a>
+            <a class="nav-link text-white" href="../pages/home.php">Home</a>
           </li>
-          
           <li class="nav-item">
             <a class="nav-link text-white" href="../pages/addEmployee.php"
               >Add Employee</a
             >
           </li>
           <li class="nav-item">
-            <a class="nav-link text-white" href="../pages/employeeReport.html"
+            <a class="nav-link text-white" href="../pages/employeeReport.php"
               >Employee Report</a
             >
           </li>
           <li class="nav-item">
-            <a class="nav-link text-white" href="../pages/salary.html"
-              >Salary</a
-            >
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-white" href="../pages/salaryReport.html"
+            <a class="nav-link text-white" href="../pages/salaryReport.php"
               >Salary Report</a
             >
           </li>
@@ -102,8 +96,60 @@
       </button>
     </nav>
     <?php echo isset($success) ? $success : "" ?>
-    <div class="table_input mt-lg-5">
-      <form method="POST" action="<?php echo $_SERVER['PHP_SELF']; ?>">
+    <div class="container shadow-lg p-3 mb-5 bg-white rounded mt-5">
+            <form method="POST" action="<?php echo $_SERVER['PHP_SELF']; ?>">
+              <div class="row">
+                  <div class="col-6">
+                      <label for="email">Name:</label>
+                      <input type="text" class="form-control" id="_name" name="name" required>
+                  </div>
+                  <div class="col-6">
+                      <label for="pwd">Basic Salary:</label>
+                      <input type="text" class="form-control" id="_salary" name="salary" required>
+                  </div>
+                  <div class="col-6 mt-2">
+                      <label for="email">Address:</label>
+                      <input type="text" class="form-control" id="_address" name="address" required>
+                  </div>
+                  <div class="col-6  mt-2">
+                      <label for="pwd">Bank Account:</label>
+                      <input type="text" class="form-control" id="_bank" name="bank"  required>
+                  </div>
+                  <div class="col-6  mt-2">
+                      <label for="email">City:</label>
+                      <input type="text" class="form-control" id="_city" name="city" required>
+                  </div>
+                  <div class="col-6  mt-2">
+                      <label for="pwd">E-mail:</label>
+                      <input type="email" class="form-control" id="_mail" name="email"  require>
+                  </div>
+                  <div class="col-6  mt-2">
+                      <label for="email">PinCode:</label>
+                      <input type="text" class="form-control" id="_pin" name="pincode"  required>
+                  </div>
+                  <div class="col-6  mt-2">
+                      <label for="pwd">Mobile:</label>
+                      <input type="text" class="form-control" id="_mobile" name="mobile"  required>
+                  </div>
+                  <div class="col-6  mt-2">
+                      <label for="email">Branch:</label>
+                      <input type="text" class="form-control" id="_branch" name="branch"  required>
+                  </div>
+                  <div class="col-6  mt-2">
+                      <label for="pwd">Degree:</label>
+                      <input type="text" class="form-control" id="_degree" name="degree"  required>
+                  </div>
+                  <div class="col-2  mt-2">
+                    <button type="submit" name="add" class="btn btn-primary">Add</button>
+                  </div>
+                  <div class="col-2  mt-2">
+                    <button type="button" onclick="reset()"  class="btn btn-danger">Reset</button>
+                  </div>
+              </div>
+            </form>
+      </div>
+    <!-- <div class="table_input mt-lg-5">
+      <form method="POST" action=">
         <table border="none" class="table table-borderless form-control-sm">
           <tr>
             <td>Name</td>
@@ -153,7 +199,7 @@
           </tr>
         </table>
       </form>
-    </div>
+    </div> -->
     <div class="mt-1">
       <table class="table table-primary table-striped add_table table-hover" id="myTable">
         <thead>
