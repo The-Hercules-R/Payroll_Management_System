@@ -38,11 +38,11 @@
           </li>
         </ul>
       </div>
-      <button id="btn_signout" class="button-82-pushable">
+      <!-- <button id="btn_signout" class="button-82-pushable">
         <span class="button-82-shadow"></span>
         <span class="button-82-edge"></span>
         <span class="button-82-front text"> Sign Out </span>
-      </button>
+      </button> -->
     </nav>
         <?php
         include '../Model/connecttion.php';

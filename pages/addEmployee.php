@@ -89,11 +89,11 @@
           </li>
         </ul>
       </div>
-      <button id="btn_signout" class="button-82-pushable">
+      <!-- <button id="btn_signout" class="button-82-pushable">
         <span class="button-82-shadow"></span>
         <span class="button-82-edge"></span>
         <span class="button-82-front text"> Sign Out </span>
-      </button>
+      </button> -->
     </nav>
     <?php echo isset($success) ? $success : "" ?>
     <div class="container shadow-lg p-3 mb-5 bg-white rounded mt-5">
